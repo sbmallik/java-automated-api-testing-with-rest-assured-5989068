@@ -3,7 +3,8 @@
   "image": "mcr.microsoft.com/devcontainers/java:17",
   "features": {
     "ghcr.io/devcontainers/features/docker-in-docker:2": {
-      "version": "latest"
+      "version": "latest",
+      "moby": "false"
     }
   },
   "postCreateCommand": "docker-compose up -d",
