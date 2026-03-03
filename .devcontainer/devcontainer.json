@@ -2,7 +2,9 @@
   "name": "API Testing Environment",
   "image": "mcr.microsoft.com/devcontainers/java:17",
   "features": {
-    "docker-in-docker": "latest"
+    "ghcr.io/devcontainers/features/docker-in-docker:2": {
+      "version": "latest"
+    }
   },
   "postCreateCommand": "docker-compose up -d",
   "postStartCommand": "docker-compose up -d",
